@@ -11,6 +11,7 @@ namespace NETFrameworkClassLibrary
     {
         public void checkBaseDirectory()
         {
+            //Change for Development
             var path1 = HostingEnvironment.ApplicationPhysicalPath;
             var path = AppDomain.CurrentDomain.BaseDirectory;
         }
