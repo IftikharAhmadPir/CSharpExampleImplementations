@@ -17,7 +17,10 @@ namespace CShartPractice.NETFramework
             //BasicProgrammingExample.checkHostingEnvironment();
             //BaseDirectory dir = new BaseDirectory();
             //dir.checkBaseDirectory();
-            BasicProgrammingExample.generatePassword();
+            //BasicProgrammingExample.generatePassword();
+            //BasicProgrammingExample.checkOperationContext();
+            //BasicProgrammingExample.HashPasswordForStoringInConfigFile();
+            BasicProgrammingExample.GetDirectory();
         }
     }
 }

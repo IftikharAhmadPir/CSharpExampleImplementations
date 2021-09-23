@@ -45,7 +45,8 @@ namespace CSharpPractice
             //exep.ExecuteConsoleApp("IftikharAhmad");
 
             //Configuration.checkAppSettingValue();
-            var abc = MembershipImp.Generate(10, 3);
+            //var abc = MembershipImp.Generate(10, 3);
+            BasicProgrammingExample.HashPasswordForStoringInConfigFile("Iftikhar");
 
             Console.ReadLine();
         }

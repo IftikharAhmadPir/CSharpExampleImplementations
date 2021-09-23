@@ -8,6 +8,7 @@ using System.Web.Hosting;
 using System.IO;
 using System.Reflection;
 using System.Web.Security;
+using System.ServiceModel;
 
 namespace CShartPractice.NETFramework
 {
@@ -41,6 +42,21 @@ namespace CShartPractice.NETFramework
         public static void generatePassword()
         {
             var abc = Membership.GeneratePassword(10, 3);
+        }
+
+        public static void checkOperationContext()
+        {
+            var abc = OperationContext.Current?.Host?.BaseAddresses?.FirstOrDefault();
+        }
+        public static void HashPasswordForStoringInConfigFile()
+        {
+            var aa = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile("Iftikhar", "md5");
+        }
+
+        public static void GetDirectory()
+        {
+            var directory = System.IO.Path.GetDirectoryName("C:\\Users\\iftik\\source\\repos\\CSharpPractice\\CShartPractice.NETFramework\\");
+            var againDirectory = AppContext.BaseDirectory;
         }
     }
 }

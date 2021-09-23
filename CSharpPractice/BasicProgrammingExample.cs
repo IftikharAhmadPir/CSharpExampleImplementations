@@ -10,6 +10,8 @@ using System.Linq;
 using Spire.Pdf;
 using Spire.Pdf.Graphics;
 using System.Drawing.Imaging;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace CSharpPractice
 {
@@ -262,6 +264,23 @@ namespace CSharpPractice
         {
             //var abc = 123;
             //var bb = abc as T;
+        }
+
+        //public static void checkOperationContext()
+        //{
+        //    var abc = OperationContext.Current?.Host?.BaseAddresses?.FirstOrDefault();
+        //}
+
+        public static void HashPasswordForStoringInConfigFile(string value)
+        {
+            MD5 algorithm = MD5.Create();
+            byte[] data = algorithm.ComputeHash(Encoding.UTF8.GetBytes(value));
+            string sh1 = "";
+            for (int i = 0; i < data.Length; i++)
+            {
+                sh1 += data[i].ToString("x2").ToUpperInvariant();
+            }
+            var abc = sh1;
         }
 
         #endregion
