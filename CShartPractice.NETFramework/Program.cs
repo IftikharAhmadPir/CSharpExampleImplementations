@@ -20,7 +20,8 @@ namespace CShartPractice.NETFramework
             //BasicProgrammingExample.generatePassword();
             //BasicProgrammingExample.checkOperationContext();
             //BasicProgrammingExample.HashPasswordForStoringInConfigFile();
-            BasicProgrammingExample.GetDirectory();
+            //BasicProgrammingExample.GetDirectory();
+            BasicProgrammingExample.CheckRichText();
         }
     }
 }

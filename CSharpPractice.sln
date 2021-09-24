@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPractice", "CSharpPra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShartPractice.NETFramework", "CShartPractice.NETFramework\CShartPractice.NETFramework.csproj", "{2193A846-1085-46E1-B839-09CAAD12AB58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETStandardClassLibrary", "NETStandardClassLibrary\NETStandardClassLibrary.csproj", "{D6876F97-FEC7-4ECB-A1E9-ADDB5C10B71C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETStandardClassLibrary", "NETStandardClassLibrary\NETStandardClassLibrary.csproj", "{D6876F97-FEC7-4ECB-A1E9-ADDB5C10B71C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkClassLibrary", "NETFrameworkClassLibrary\NETFrameworkClassLibrary.csproj", "{D1DB017A-270E-4E1F-8A7F-8D677CF35E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkWPF", "NETFrameworkWPF\NETFrameworkWPF.csproj", "{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D1DB017A-270E-4E1F-8A7F-8D677CF35E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1DB017A-270E-4E1F-8A7F-8D677CF35E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1DB017A-270E-4E1F-8A7F-8D677CF35E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

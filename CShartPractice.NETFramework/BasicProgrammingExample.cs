@@ -9,6 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Web.Security;
 using System.ServiceModel;
+using System.Windows.Forms;
 
 namespace CShartPractice.NETFramework
 {
@@ -55,8 +56,19 @@ namespace CShartPractice.NETFramework
 
         public static void GetDirectory()
         {
-            var directory = System.IO.Path.GetDirectoryName("C:\\Users\\iftik\\source\\repos\\CSharpPractice\\CShartPractice.NETFramework\\");
-            var againDirectory = AppContext.BaseDirectory;
+            //var directory = System.IO.Path.GetDirectoryName("C:\\Users\\iftik\\source\\repos\\CSharpPractice\\CShartPractice.NETFramework\\");
+            //var againDirectory = AppContext.BaseDirectory;
+            var path1 = HostingEnvironment.ApplicationPhysicalPath;
+            var path2 = AppContext.BaseDirectory;
+        }
+
+        public static void CheckRichText()
+        {
+            using(RichTextBox rtb = new RichTextBox())
+            {
+                rtb.Rtf = "Iftikhar";
+                var abc = rtb.Rtf;
+            }
         }
     }
 }
