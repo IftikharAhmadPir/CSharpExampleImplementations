@@ -49,8 +49,10 @@ namespace CSharpPractice
             //var abc = MembershipImp.Generate(10, 3);
             //BasicProgrammingExample.HashPasswordForStoringInConfigFile("Iftikhar");
 
-            var filedata = File.ReadAllText("C:\\Users\\iftik\\Documents\\tutorial1.rtf");
-            var reply = RichTextStripper.StripRichTextFormat(filedata);
+            //var filedata = File.ReadAllText("C:\\Users\\iftik\\Documents\\tutorial1.rtf");
+            //var reply = RichTextStripper.StripRichTextFormat(filedata);
+
+            BasicProgrammingExample.InfiniteLoop();
 
             Console.ReadLine();
         }

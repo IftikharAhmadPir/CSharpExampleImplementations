@@ -283,6 +283,16 @@ namespace CSharpPractice
             var abc = sh1;
         }
 
+        public static void InfiniteLoop()
+        {
+            int num = 0;
+            while(true)
+            {
+                Console.WriteLine("Number: {0}", num);
+                num++;
+            }
+        }
+
         #endregion
 
         #region [Private Method]
