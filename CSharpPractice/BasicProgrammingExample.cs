@@ -271,7 +271,7 @@ namespace CSharpPractice
         //    var abc = OperationContext.Current?.Host?.BaseAddresses?.FirstOrDefault();
         //}
 
-        public static void HashPasswordForStoringInConfigFile(string value)
+        public static string HashPasswordForStoringInConfigFile(string value)
         {
             MD5 algorithm = MD5.Create();
             byte[] data = algorithm.ComputeHash(Encoding.UTF8.GetBytes(value));
@@ -280,7 +280,8 @@ namespace CSharpPractice
             {
                 sh1 += data[i].ToString("x2").ToUpperInvariant();
             }
-            var abc = sh1;
+
+            return sh1;
         }
 
         public static void InfiniteLoop()

@@ -10,6 +10,8 @@ using System.Reflection;
 using System.Web.Security;
 using System.ServiceModel;
 using System.Windows.Forms;
+using CShartPractice;
+using CSharpPractice;
 
 namespace CShartPractice.NETFramework
 {
@@ -42,16 +44,24 @@ namespace CShartPractice.NETFramework
 
         public static void generatePassword()
         {
-            var abc = Membership.GeneratePassword(10, 3);
+            var a1 = Membership.GeneratePassword(5, 1);
+            var a2 = Membership.GeneratePassword(6, 2);
+            var a3 = Membership.GeneratePassword(7, 3);
+            var a4 = Membership.GeneratePassword(8, 4);
+            var a5 = Membership.GeneratePassword(9, 5);
+            var a6 = Membership.GeneratePassword(10, 6);
+            var a7 = Membership.GeneratePassword(11, 7);
+            var a8 = Membership.GeneratePassword(12, 8);
+            var a9 = Membership.GeneratePassword(13, 9);
         }
 
         public static void checkOperationContext()
         {
             var abc = OperationContext.Current?.Host?.BaseAddresses?.FirstOrDefault();
         }
-        public static void HashPasswordForStoringInConfigFile()
+        public static string HashPasswordForStoringInConfigFile(string value)
         {
-            var aa = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile("Iftikhar", "md5");
+            return System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(value, "md5");
         }
 
         public static void GetDirectory()
@@ -64,11 +74,16 @@ namespace CShartPractice.NETFramework
 
         public static void CheckRichText()
         {
-            using(RichTextBox rtb = new RichTextBox())
+            var abcba = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset238{\*\fname Arial;}Arial CE;}}  \viewkind4\uc1\pard\fs17 Diese Sicht enth\'e4lt alle Kundenauftr\'e4ge aus #*SLAUF (sprich alle Zustellteilstrecken), die normal, importiert, ILV oder Avise sind. Ebenfalls sichtbar sind Ums\'e4tze und Erl\'f6se aus #*SumKA, die KMGFT aus #*Auf, Namen und Adressen von Auftraggeber, Absender, Empf\'e4nger und ESped aus dem Kundenstamm (#*Kun).\f1   \par }";
+            using (RichTextBox rtb = new RichTextBox())
             {
-                rtb.Rtf = "Iftikhar";
-                var abc = rtb.Rtf;
+                rtb.Rtf = abcba;
+                var abc = rtb.Text;
             }
+
+            var aaa = RichTextStripper.StripRichTextFormat(abcba);
+
+
         }
     }
 }
