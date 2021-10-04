@@ -67,11 +67,11 @@ namespace CSharpPractice
             //var a9 = BasicProgrammingExample.HashPasswordForStoringInConfigFile("!LoveMyPiano");
             //var a10 = BasicProgrammingExample.HashPasswordForStoringInConfigFile("Sterling");
 
-            //var filedata = File.ReadAllText("C:\\Users\\iftik\\Documents\\tutorial1.rtf");
-            //var reply = RichTextStripper.StripRichTextFormat(filedata);
+            var filedata = File.ReadAllText("C:\\Users\\iftik\\Documents\\tutorial1.rtf");
+            var reply = RichTextStripper.StripRichTextFormat(filedata);
 
-            string input = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset238{\*\fname Arial;}Arial CE;}}  \viewkind4\uc1\pard\fs17 Diese Sicht enth\'e4lt alle Kundenauftr\'e4ge aus #*SLAUF (sprich alle Zustellteilstrecken), die normal, importiert, ILV oder Avise sind. Ebenfalls sichtbar sind Ums\'e4tze und Erl\'f6se aus #*SumKA, die KMGFT aus #*Auf, Namen und Adressen von Auftraggeber, Absender, Empf\'e4nger und ESped aus dem Kundenstamm (#*Kun).\f1   \par }";
-            var reply = RichTextStripper.StripRichTextFormat(input);
+            //string input = @"{\rtf1\ansi\ansicpg1252\deff0\deflang1031{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset238{\*\fname Arial;}Arial CE;}}  \viewkind4\uc1\pard\fs17 Diese Sicht enth\'e4lt alle Kundenauftr\'e4ge aus #*SLAUF (sprich alle Zustellteilstrecken), die normal, importiert, ILV oder Avise sind. Ebenfalls sichtbar sind Ums\'e4tze und Erl\'f6se aus #*SumKA, die KMGFT aus #*Auf, Namen und Adressen von Auftraggeber, Absender, Empf\'e4nger und ESped aus dem Kundenstamm (#*Kun).\f1   \par }";
+            //var reply = RichTextStripper.StripRichTextFormat(input);
 
             //BasicProgrammingExample.InfiniteLoop();
 
