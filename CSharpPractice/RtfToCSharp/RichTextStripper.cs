@@ -220,6 +220,9 @@ public static class RichTextStripper
 
         returnString = String.Join(String.Empty, outList.ToArray());
 
+        if (returnString != "")
+            returnString = returnString.TrimEnd();
+
         return returnString;
     }
 }
