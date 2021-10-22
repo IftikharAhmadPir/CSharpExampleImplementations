@@ -254,7 +254,9 @@ namespace CSharpPractice
 
             //var result = GeoCoordinate.CalculateDistance(Point1, Point2);
 
-            SystemIOMethods.formatPath();
+            //SystemIOMethods.formatPath();
+
+            MethodsToTest.toString();
 
             Console.ReadLine();
         }

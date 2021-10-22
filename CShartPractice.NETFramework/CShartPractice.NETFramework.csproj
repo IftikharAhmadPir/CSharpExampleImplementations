@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BasicProgrammingExample.cs" />
     <Compile Include="GetCoordinate\Coordinate.cs" />
+    <Compile Include="PerformanceTesting\MethodsToTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RTFStripper\RichTextStripper.cs" />
