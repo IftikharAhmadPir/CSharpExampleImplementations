@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkClassLibrary", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkWPF", "NETFrameworkWPF\NETFrameworkWPF.csproj", "{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPractice.NET5", "CSharpPractice.NET5\CSharpPractice.NET5.csproj", "{F3EE960A-D61E-4425-84D3-0C279524272E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EE960A-D61E-4425-84D3-0C279524272E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EE960A-D61E-4425-84D3-0C279524272E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EE960A-D61E-4425-84D3-0C279524272E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EE960A-D61E-4425-84D3-0C279524272E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
