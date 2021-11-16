@@ -17,8 +17,8 @@ namespace CSharpPractice
             try
             {
                 //Account I want to create
-                var userName = "gobabygo";
-                var password = "comeback";
+                var userName = "TestUserName";
+                var password = "TestPassword";
                 // Set MQ server credentials
                 NetworkCredential networkCredential = new NetworkCredential("guest", "guest");
 
