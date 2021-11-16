@@ -13,6 +13,7 @@ namespace CShartPractice.NETFramework
     {
         static void Main(string[] args)
         {
+            
             //BasicProgrammingExample.checkAppSettingValue();
             //BasicProgrammingExample.checkHostingEnvironment();
             //BaseDirectory dir = new BaseDirectory();
@@ -108,7 +109,8 @@ namespace CShartPractice.NETFramework
             //resultList.Add(Coordinate.getAirlineDistanceTo(Point31, Point32));
             //resultList.Add(Coordinate.getAirlineDistanceTo(Point33, Point34));
             //resultList.Add(Coordinate.getAirlineDistanceTo(Point35, Point36));
-            MethodsToTest.toString();
+            //MethodsToTest.toString();
+
         }
     }
 }

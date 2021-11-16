@@ -256,8 +256,21 @@ namespace CSharpPractice
 
             //SystemIOMethods.formatPath();
 
-            MethodsToTest.toString();
+            //MethodsToTest.toString();
 
+            //int a = 8;
+
+            //if(a>=7)
+            //{
+            //    //DoSomething
+            //    var aa = "";
+            //}
+            //else if(a > 0)
+            //{
+            //    //DoSomething
+            //}
+
+            RMQAddUser.AddUser();
             Console.ReadLine();
         }
 
