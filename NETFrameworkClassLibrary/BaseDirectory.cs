@@ -13,8 +13,9 @@ namespace NETFrameworkClassLibrary
         {
             //Change for Development
             var path0 = HostingEnvironment.ApplicationPhysicalPath;
-            var path1 = AppDomain.CurrentDomain.BaseDirectory;
-            var path2 = AppContext.BaseDirectory;
+            var path1 = System.IO.Directory.GetCurrentDirectory();
+            //var path1 = AppDomain.CurrentDomain.BaseDirectory;
+            //var path2 = AppContext.BaseDirectory;
         }
     }
 }

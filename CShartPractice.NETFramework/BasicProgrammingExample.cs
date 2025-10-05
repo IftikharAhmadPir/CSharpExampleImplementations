@@ -12,6 +12,8 @@ using System.ServiceModel;
 using System.Windows.Forms;
 using CShartPractice;
 using CSharpPractice;
+using System.Web.Mvc;
+using System.Runtime.CompilerServices;
 
 namespace CShartPractice.NETFramework
 {
@@ -23,6 +25,7 @@ namespace CShartPractice.NETFramework
             var abc = WebConfigurationManager.AppSettings[key];
         }
 
+        [AllowAnonymous]
         public static void checkHostingEnvironment()
         {
             string HostingPath = HostingEnvironment.ApplicationPhysicalPath;
@@ -40,6 +43,12 @@ namespace CShartPractice.NETFramework
                         return null;
                     }
                 });
+        }
+
+        public static void checkFilePath([CallerMemberName] string MethodName = "", [CallerFilePath] string ClassName = "")
+        {
+            string ClasName = Path.GetFileNameWithoutExtension(ClassName);
+            string MethdName = MethodName;
         }
 
         public static void generatePassword()

@@ -1,0 +1,6 @@
+@NET8APIProject_HostAddress = http://localhost:5083
+
+GET {{NET8APIProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -275,13 +275,14 @@ namespace CSharpPractice
         {
             MD5 algorithm = MD5.Create();
             byte[] data = algorithm.ComputeHash(Encoding.UTF8.GetBytes(value));
-            string sh1 = "";
+            StringBuilder sh1 = new StringBuilder();
             for (int i = 0; i < data.Length; i++)
             {
-                sh1 += data[i].ToString("x2").ToUpperInvariant();
+                sh1.Append(data[i].ToString("x2").ToUpperInvariant());
             }
 
-            return sh1;
+            var abc = sh1.ToString();
+            return sh1.ToString();
         }
 
         public static void InfiniteLoop()

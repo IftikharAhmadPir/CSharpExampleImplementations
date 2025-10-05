@@ -1,13 +1,127 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
+using NETStandardClassLibrary;
+using CSharpPractice.IronPDF;
+using System.ServiceModel;
+using CSharpPractice.InterfaceImplementation;
+using CSharpPractice.Interface;
+using System.Xml.Serialization;
+using System.Xml;
+using System.Text;
+using Newtonsoft.Json;
+using System.Configuration;
 
 namespace CSharpPractice
 {
+    public class Model
+    {
+        public Model()
+        {
+        }
+
+        [JsonConstructor]
+        public Model(List<Model> row)
+        {
+            var abc = row;
+        }
+        public int ID { get; set; }
+        public string Name { get; set; }
+    }
     class Program
     {
+        private static readonly string gernallink = "http://localhost:15672";
         static void Main(string[] args)
         {
+
+            //TimeSpan timespan = new TimeSpan(0, 15, 0);
+            //var secondtime = timespan.Seconds;
+            //var millisecondtime = timespan.TotalMilliseconds;
+            //var millisecondtimeint = (int)timespan.TotalMilliseconds;
+            //var kchnahi = 1;
+
+            
+
+            //List<Model> model = new List<Model>()
+            //{
+            //    new Model()
+            //    {
+            //        ID = 1,
+            //        Name = "Iftikhar Ahmad"
+            //    },
+            //    new Model()
+            //    {
+            //        ID = 2,
+            //        Name = "Ahmad Jan"
+            //    }
+            //};
+
+            //var serializedJSON = JsonConvert.SerializeObject(model);
+
+            //var deseraializedJSON = JsonConvert.DeserializeObject<List<Model>>(serializedJSON);
+
+            //foreach (var item in model)
+            //{
+            //    var abcd = item.Name.GetType();
+            //    var abce = item.Name.GetType().FullName;
+            //}
+
+            //var ab = typeof(DateTime);
+            //var ac = typeof(DateTime).FullName;
+
+            //XmlSerializer xsSubmit = new XmlSerializer(typeof(List<Model>));
+            
+            //var xml = "";
+
+            //using (var sww = new StringWriter())
+            //{
+            //    using (XmlWriter writer = XmlWriter.Create(sww))
+            //    {
+            //        xsSubmit.Serialize(writer, model);
+            //        xml = sww.ToString(); // Your XML
+            //    }
+            //}
+
+            //var JSON = JsonConvert.SerializeObject(model, Newtonsoft.Json.Formatting.None);
+            //var byt= Encoding.UTF8.GetBytes(JSON);
+
+            //var aa = "";
+            //var path = new Uri(new Uri(gernallink), "api/users/");
+
+            //var abc = OperationContext.Current;
+                //Functions.mergePDFStream();
+            //Functions.streamToPDF();
+            //Functions.PDFToImage();
+            //Functions.PNGToPDF();
+            //Functions.JPGToPDF();
+            ////Functions.TIFFToPDF();
+            //Functions.MergePDF();
+            //Functions.PDFToImage();
+
+            //Functions.getByte();
+
+            //var directory = new BaseDirectory();
+            //directory.callRabbitScript();
+            //RMQAddUser.findpath();
+            //RMQAddUser.enableRabbitMQManagementTool();
+            //RMQAddUser.AddUserModified("NewUser", "NewUser");
+            //RMQAddUser.AddUser();
+            //RMQAddUser.AddUserModified("NewUser", "NewUser");
+            //LISRabbitMQConfiguration.AddRabbitMQUser("NewUser","NewUser");
+            //RMQAddUser.enableRabbitMQManagementTool();
+            //RMQAddUser.OldImplementation("NewUser", "NewUser");
+
+            //var method1 = RMQAddUser.EnableRabbitMQManagementTool();
+            //method1.Wait();
+            //var method1Result = method1.Result;
+            //if(method1Result)
+            //{
+            //    var method2 = RMQAddUser.AddRabbitMQUser("gobabygo", "comeback");
+            //    method2.Wait();
+            //    var method2Result = method2.Result;
+            //}
+
             //BasicProgrammingExample.CheckEvenOdd();
             //BasicProgrammingExample.SwapTwoNumbers();
             //BasicProgrammingExample.DateTimeFormat();
@@ -270,9 +384,14 @@ namespace CSharpPractice
             //    //DoSomething
             //}
 
-            RMQAddUser.AddUser();
+            //var directory = new BaseDirectory();
+            //directory.callRabbitScript();
+
+
             Console.ReadLine();
         }
+
+      
 
         public static void E_EventCompleted(object sender, bool IsSuccessfull)
         {

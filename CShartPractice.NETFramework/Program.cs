@@ -1,19 +1,151 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 //using NETStandardClassLibrary;
-using NETFrameworkClassLibrary;
+//using NETFrameworkClassLibrary;
+using System.Web.Hosting;
+using System.Windows.Media;
+using NETStandardClassLibrary;
+using NETStandardClassLibrary.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace CShartPractice.NETFramework
 {
-    class Program
+    public class CMCIndexMetadataBase
     {
+        public string ViewName { get; set; }
+        public string ViewUniqueKey { get; set; }
+        public string MainTable { get; set; }
+        public string[] JoinedTables { get; set; }
+        public Dictionary<string, Dictionary<string, string>> JoinDescription { get; set; }
+    }
+
+
+    public class Program : Form
+    {
+        //private static bool OuterMethod()
+        //{
+        //    var List = new string[] { "1", "2", "3", "4", "5" };
+        //    foreach (var ListItem in List)
+        //    {
+        //        var abc = ListItem;
+        //        Somemethod(abc);
+        //        continue;
+        //        var hsd = "";
+        //    }
+
+        //    return false;
+        //}
+        //private static bool Somemethod(string somevalue)
+        //    {
+
+        //    return true;
+        //    }
         static void Main(string[] args)
         {
-            
+
+            // Your date string
+            string inputDate = "1996-01-01 00:00:00.000";
+
+            // Convert the string to DateTime
+            DateTime date = DateTime.ParseExact(inputDate, "yyyy-MM-dd HH:mm:ss.fff", null);
+
+            // Format the DateTime according to Elasticsearch date format
+            string formattedDate = date.ToString("yyyy-MM-ddTHH:mm:ss.fffZ");
+
+            // Print the formatted date
+            Console.WriteLine("Formatted Date: " + formattedDate);
+            //OuterMethod();
+
+            //var CMCCustomer = new CMCIndexMetadataBase()
+            //{
+            //    ViewName = "XXAV_CMCCustomer",
+            //    ViewUniqueKey = "KundenNr",
+            //    MainTable = "XXAKun",
+            //    JoinedTables = new string[] { "XXAKun2", "Orte" },
+            //    JoinDescription = new Dictionary<string, Dictionary<string, string>>()
+            //        {
+            //          { "XXAKun2", new Dictionary<string, string> { {"KundenNr","KundenNr"}} } ,
+            //          { "Orte", new Dictionary<string, string> {{ "LfdNr","OrteLfdNr"},{ "LKZ","OrteLKZ"}}},
+            //        },
+            //};
+            //var sqlstatement = __GenerateSQLStatement(CMCCustomer, "XXAKun2", "KundenNr", "0");
+
+            #region CommentedCOde
+
+            //var abc = "This is a Hash: \\#*";
+            //Console.WriteLine(abc);
+
+            // Generating all possible combinations of a 4-digit PIN code
+            //string[] combinations = new string[10000];
+            //for (int i = 0; i < 10000; i++)
+            //{
+            //    string pin = i.ToString("D4"); // Pads the PIN with leading zeros if necessary
+            //    combinations[i] = pin;
+            //}
+
+            //// Print the generated combinations
+            //foreach (string pin in combinations)
+            //{
+            //    Console.WriteLine(pin);
+            //}
+
+            //BasicProgrammingExample.checkFilePath("TestMethod", "TestClass");
+
+            //var abc = new SolidColorBrush(Color.FromRgb(227, 6, 20)).Color;
+
+
+
+            //var abc = new SerializedModel()
+            //{
+            //    Id = 1,
+            //    Name = "Iftikhar",
+            //    Type = typeof(string)
+            //};
+            //BaseDirectory.justserialize(abc);
+            //var abc = HostingEnvironment.ApplicationPhysicalPath;
+
+            //var abc = typeof(BasicProgrammingExample).GetMethod("checkHostingEnvironment");
+            //var tes = abc.GetCustomAttributes(false);
+
+            //string address = "https://localhost:44368/api/Employee/GetEmployeeById?Id=1";
+
+            //Uri urinew = new Uri(address);
+
+            //GetSelfHost(urinew);
+
+            //var LongURL = "https://localhost:44368/api/Employee/GetEmployeeById";
+            //var parsed = System.Web.HttpUtility.ParseQueryString(LongURL);
+            //parsed.Add("Name", "Iftikhar");
+
+            //var scheme = "https";
+            //var host = "localhost";
+            //var port = 44328;
+            //int TestID = 123;
+
+            //var abc = __UriBuilder(scheme, host, port, "SendMSMQTestingMessage", "TestID=" + TestID);
+            //UriBuilder baseURI = new UriBuilder(scheme, host, port, "SendMSMQTestingMessage");
+            //baseURI.Query = "TestParam = Iftikhar";
+
+            #region UselessCode
+            //var strings1 = PDF4NET.__ToTiff();
+            //var strings2 = PDF4NET.__ToTiffByIronPDF();
+
+            //var result1 = PDF4NET.PDFStreamToTxtO2Lib();
+            //var result2 = PDF4NET.PDFStreamToTxtIronPDF();
+
+            //var result = strings1.Equals(strings2);
+            //PDF4NET.checkPrintServer();
+            //PDF4NET.DoPrint();
             //BasicProgrammingExample.checkAppSettingValue();
             //BasicProgrammingExample.checkHostingEnvironment();
             //BaseDirectory dir = new BaseDirectory();
@@ -110,7 +242,113 @@ namespace CShartPractice.NETFramework
             //resultList.Add(Coordinate.getAirlineDistanceTo(Point33, Point34));
             //resultList.Add(Coordinate.getAirlineDistanceTo(Point35, Point36));
             //MethodsToTest.toString();
+            #endregion
+            #endregion
+            //passsomething("",null);
+            Console.ReadLine();
 
         }
+
+        private int totalPoints = 0;
+        private int insideCircle = 0;
+
+        //public Program()
+        //{
+        //    this.Size = new Size(400, 400);
+        //    this.Paint += new PaintEventHandler(DrawVisualization);
+        //    Timer timer = new Timer();
+        //    timer.Interval = 100;
+        //    timer.Tick += new EventHandler(UpdateVisualization);
+        //    timer.Start();
+        //}
+
+        //private void DrawVisualization(object sender, PaintEventArgs e)
+        //{
+        //    Graphics g = e.Graphics;
+        //    Pen pen = new Pen(Color.Black);
+        //    Brush brush = new SolidBrush(Color.Blue);
+
+        //    // Draw a square
+        //    g.DrawRectangle(pen, 50, 50, 300, 300);
+
+        //    // Draw a quarter circle
+        //    g.DrawArc(pen, 50, 50, 300, 300, 0, 90);
+
+        //    // Draw random points and count how many are inside the quarter circle
+        //    Random rand = new Random();
+        //    for (int i = 0; i < totalPoints; i++)
+        //    {
+        //        double x = rand.NextDouble() * 300 + 50;
+        //        double y = rand.NextDouble() * 300 + 50;
+        //        if (Math.Pow(x - 200 - 50, 2) + Math.Pow(y - 200 - 50, 2) <= Math.Pow(150, 2))
+        //        {
+        //            insideCircle++;
+        //            brush = new SolidBrush(Color.Red);
+        //        }
+        //        else
+        //        {
+        //            brush = new SolidBrush(Color.Blue);
+        //        }
+        //        g.FillRectangle(brush, (float)x, (float)y, 2, 2);
+        //    }
+
+        //    // Calculate the approximation of pi
+        //    double piApproximation = 4.0 * insideCircle / totalPoints;
+
+        //    // Display the approximation on the form
+        //    g.DrawString("Approximation of π: " + piApproximation, Font, brush, 10, 10);
+        //}
+
+        private void UpdateVisualization(object sender, EventArgs e)
+        {
+            totalPoints += 1000; // Add more points for each update
+            this.Invalidate();
+        }
+
+
+        private static StringBuilder __GenerateSQLStatement(CMCIndexMetadataBase MetaData, string Table, string PKColumn, string PKValue)
+        {
+            StringBuilder SqlStatement = new StringBuilder();
+            SqlStatement.AppendLine("SELECT " + MetaData.ViewUniqueKey + " FROM " + MetaData.MainTable + "");
+            SqlStatement.AppendLine("WHERE " + MetaData.JoinDescription.ElementAt(0).Value.ElementAt(0).Value + " IN");
+            SqlStatement.AppendLine("( SELECT " + MetaData.JoinDescription.ElementAt(0).Value.ElementAt(0).Value + " FROM " + MetaData.MainTable + " WHERE " + MetaData.JoinDescription.ElementAt(0).Value.ElementAt(0).Value + " IN");
+            SqlStatement.AppendLine("( SELECT " + MetaData.JoinDescription.ElementAt(0).Value.ElementAt(0).Key + " From " + Table + " WHERE " + PKColumn + " = " + PKValue + "");
+            return SqlStatement;
+        }
+        internal static void passsomething(string valie, TimeSpan? timespan)
+        {
+            var checkval = timespan;
+        }
+
+        internal static string __UriBuilder(string Scheme, string Host, int Port, string Path, params string[] QueryStrings)
+        {
+            UriBuilder baseUri = new UriBuilder(Scheme, Host, Port, "api/LISNotificationController/" + Path);
+
+            foreach (var QuersString in QueryStrings)
+            {
+                if (baseUri.Query != null && baseUri.Query.Length > 1)
+                    baseUri.Query = baseUri.Query.Substring(1) + "&" + QuersString;
+                else baseUri.Query = QuersString;
+            }
+            return baseUri.ToString();
+        }
+
+
+        public static void GetSelfHost(Uri ServerUri)
+        {
+            var Scheme = ServerUri.Scheme;
+            var ServerName = ServerUri.Host;
+            var ServerAddress = __GetLocalIP(ServerName);
+            var ServerIP = ServerAddress.ToString();
+            var ServerPort = ServerUri.Port;
+        }
+
+        private static IPAddress __GetLocalIP(string HostName)
+        {
+            var Addresses = Dns.GetHostAddresses(HostName);
+            return Addresses.FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork);
+        }
     }
+
+
 }

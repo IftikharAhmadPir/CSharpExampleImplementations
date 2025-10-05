@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPractice", "CSharpPractice\CSharpPractice.csproj", "{B41911A2-B6AE-4560-B7BB-E9E17703B165}"
 EndProject
@@ -13,7 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkClassLibrary", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETFrameworkWPF", "NETFrameworkWPF\NETFrameworkWPF.csproj", "{B3DC6CCA-BC01-4FD9-AFCE-4167BBC98EBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPractice.NET5", "CSharpPractice.NET5\CSharpPractice.NET5.csproj", "{F3EE960A-D61E-4425-84D3-0C279524272E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPractice.NET5", "CSharpPractice.NET5\CSharpPractice.NET5.csproj", "{F3EE960A-D61E-4425-84D3-0C279524272E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPracticeNET6", "CSharpPracticeNET6\CSharpPracticeNET6.csproj", "{C819B349-84B0-42F0-86F8-ACB53B0CD693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetClassLibraryProject", "NetClassLibraryProject\NetClassLibraryProject.csproj", "{4991401F-AEF7-4B24-B0DA-315A119F2FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET8APIAOT", "NET8APIAOT\NET8APIAOT.csproj", "{AFB08A4D-1D74-441D-AA1A-08AEAD55E9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET8APIProject", "NET8APIProject\NET8APIProject.csproj", "{429C061F-7BFC-4BE0-9645-0A5482B6DCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET8WebAPI", "NET8WebAPI\NET8WebAPI.csproj", "{87709068-1D04-4AC1-BF5F-008746B463F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +55,26 @@ Global
 		{F3EE960A-D61E-4425-84D3-0C279524272E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3EE960A-D61E-4425-84D3-0C279524272E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3EE960A-D61E-4425-84D3-0C279524272E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C819B349-84B0-42F0-86F8-ACB53B0CD693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C819B349-84B0-42F0-86F8-ACB53B0CD693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C819B349-84B0-42F0-86F8-ACB53B0CD693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C819B349-84B0-42F0-86F8-ACB53B0CD693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4991401F-AEF7-4B24-B0DA-315A119F2FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4991401F-AEF7-4B24-B0DA-315A119F2FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4991401F-AEF7-4B24-B0DA-315A119F2FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4991401F-AEF7-4B24-B0DA-315A119F2FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB08A4D-1D74-441D-AA1A-08AEAD55E9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB08A4D-1D74-441D-AA1A-08AEAD55E9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB08A4D-1D74-441D-AA1A-08AEAD55E9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB08A4D-1D74-441D-AA1A-08AEAD55E9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429C061F-7BFC-4BE0-9645-0A5482B6DCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429C061F-7BFC-4BE0-9645-0A5482B6DCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429C061F-7BFC-4BE0-9645-0A5482B6DCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429C061F-7BFC-4BE0-9645-0A5482B6DCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87709068-1D04-4AC1-BF5F-008746B463F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87709068-1D04-4AC1-BF5F-008746B463F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87709068-1D04-4AC1-BF5F-008746B463F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87709068-1D04-4AC1-BF5F-008746B463F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
